@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лабораторная №8</title>
+	<meta charset="utf-8">
+</head>
+<body style='background-color: white; color: black' class = "userBody">
+<h1>Диана Катюшкина</h1>
+<h2>Лабораторная работа 8</h2>
+<p><a href="https://www.google.ru/" class="userA">Пользовательская ссылка</a></p>
+	<script type="text/javascript">
+		var a = prompt("Введите цвет фона:");
+		var b = prompt("Введите цвет текста:");
+		var c = prompt("Введите ссылку (полный путь)");
+		var uBody = document.querySelector("body.userBody");
+		uBody.setAttribute("style", `background-color:${a}`);
+		var dir = document.documentElement;
+		dir.style.color = b;
+		var uA = document.querySelector("a.userA");
+		uA.setAttribute("href", `${c}`);
+	</script>
+</body>
+</html>
